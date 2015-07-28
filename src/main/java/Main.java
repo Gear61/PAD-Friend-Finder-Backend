@@ -1,23 +1,20 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-
 import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.*;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.sql.*;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-
-import org.json.JSONArray;
+import org.eclipse.jetty.servlet.ServletContextHandler;
+import org.eclipse.jetty.servlet.ServletHolder;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Main extends HttpServlet {
 	
@@ -35,24 +32,30 @@ public class Main extends HttpServlet {
 			stmt.executeUpdate(TABLE_CREATION);
 		}
 		catch (Exception e) {
-			resp.getWriter().print("doPost exception 1: There was an error: " + e.getMessage());
+			resp.setStatus(500);
+			resp.getWriter().print("Table creation error: " + e.getMessage());
 		}
-		
+
 		try {
 			String req_string = req.getRequestURI();
 			String[] split_req = req_string.split("/");
-			if (split_req.length < 3)
-				return;
-			
-			if(split_req[1].equals("monsters"))
-				getBox.get_Box(connection, resp, split_req[2]);
-				
+			if (split_req.length < 3) {
+				resp.setStatus(404);
+			}
+			else if (split_req[1].equals("monsters")) {
+				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
+			}
+			else {
+				resp.setStatus(404);
+			}
 		}
 		catch (JSONException e1) {
-			resp.getWriter().print("doPost exception 3: There was an error: " + getStackTrace(e1));
+			resp.setStatus(500);
+			resp.getWriter().print("Failed to parse body JSON: " + getStackTrace(e1));
 		}
 		catch (IOException e) {
-			resp.getWriter().print("doPost exception 4: There was an error: " + getStackTrace(e));
+			resp.setStatus(500);
+			resp.getWriter().print("Failed to prepare SQL statement: " + getStackTrace(e));
 		}
 		
 		finally {
@@ -60,7 +63,7 @@ public class Main extends HttpServlet {
 				connection.close();
 			}
 			catch (SQLException e) {
-				resp.getWriter().print("doPost exception 5: There was an error: " + getStackTrace(e));
+				resp.getWriter().print("Failed to close connection: " + getStackTrace(e));
 			}
 		}
 	}
@@ -76,39 +79,44 @@ public class Main extends HttpServlet {
 			stmt.executeUpdate(TABLE_CREATION);
 		}
 		catch (Exception e) {
-			resp.getWriter().print("doPost exception 1: There was an error: " + e.getMessage());
+			resp.setStatus(500);
+			resp.getWriter().print("Table creation error: " + e.getMessage());
 		}
 		
 		StringBuffer jb = new StringBuffer();
-		String line = null;
+		String line;
 		try {
 			BufferedReader reader = req.getReader();
 			while ((line = reader.readLine()) != null)
 				jb.append(line);
 		}
 		catch (IOException e) {
-			resp.getWriter().print("doPost exception 2: There was an error: " + getStackTrace(e));
+			resp.setStatus(400);
+			resp.getWriter().print("Couldn't read in request body: " + getStackTrace(e));
 		}
 		
 		try {
 			JSONObject jsonObject = new JSONObject(jb.toString());
-			if (req.getRequestURI().endsWith("/fetch"))
-				fetchIDs.fetch_IDS(connection, resp, jsonObject);
+			if (req.getRequestURI().endsWith("/fetch")) {
+				fetchIDs.fetchIDs(connection, resp, jsonObject);
+			}
 			else if (req.getRequestURI().endsWith("/update")) {
-				resp.getWriter().print("Posting\n");
-				update.update_profile(connection, resp, jsonObject);
+				updateMonster.updateMonster(connection, resp, jsonObject);
 			}
 			else if (req.getRequestURI().endsWith("/delete")) {
-				delete.delete_monster(connection, resp, jsonObject);
+				deleteMonster.delete_monster(connection, resp, jsonObject);
 			}
-			else
-				resp.getWriter().print("Post");
+			else {
+				resp.setStatus(404);
+			}
 		}
 		catch (JSONException e1) {
-			resp.getWriter().print("doPost exception 3: There was an error: " + getStackTrace(e1));
+			resp.setStatus(400);
+			resp.getWriter().print("Error parsing request JSON: " + getStackTrace(e1));
 		}
 		catch (IOException e) {
-			resp.getWriter().print("doPost exception 4: There was an error: " + getStackTrace(e));
+			resp.setStatus(500);
+			resp.getWriter().print("Error creating SQL statement: " + getStackTrace(e));
 		}
 		
 		finally {
@@ -116,13 +124,13 @@ public class Main extends HttpServlet {
 				connection.close();
 			}
 			catch (SQLException e) {
-				resp.getWriter().print("doPost exception 5: There was an error: " + getStackTrace(e));
+				resp.getWriter().print("Failed to close connection: " + getStackTrace(e));
 			}
 		}
 	
 	}
 	
-	private Connection getConnection() throws URISyntaxException, SQLException
+	private static Connection getConnection() throws URISyntaxException, SQLException
 	{
 	    URI dbUri = new URI(System.getenv("DATABASE_URL"));
 

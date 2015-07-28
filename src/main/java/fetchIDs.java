@@ -1,27 +1,17 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.*;
-
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.sql.*;
-import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class fetchIDs {
 
-    public static void fetch_IDS(Connection connection, HttpServletResponse resp, JSONObject info) throws JSONException, IOException {
+    public static void fetchIDs(Connection connection, HttpServletResponse resp, JSONObject info) throws JSONException, IOException {
         try {
             String fetch_sql = "Select * from monster " +
                     "where pad_ID <> ? and name = ? and level >= ? and skill_level >= ? and awakenings >= ? and plus_eggs >= ? " +
@@ -35,7 +25,6 @@ public class fetchIDs {
             stmt.setInt(5,monster.getInt("awakenings"));
             stmt.setInt(6,monster.getInt("plus_eggs"));
             ResultSet rs =  stmt.executeQuery();
-            String id, name;
             JSONArray ppl_array = new JSONArray();
             while (rs.next()) {
                 JSONObject person = new JSONObject();
@@ -50,6 +39,7 @@ public class fetchIDs {
             resp.getWriter().print(ppl_array.toString());
         }
         catch (SQLException e) {
+            resp.setStatus(500);
             resp.getWriter().print("fetch IDS error: " + Main.getStackTrace(e));
         }
     }
