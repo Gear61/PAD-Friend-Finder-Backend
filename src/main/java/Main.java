@@ -48,6 +48,9 @@ public class Main extends HttpServlet {
 			else if (split_req[1].equals("monsters")) {
 				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
 			}
+			else if (split_req[1].equals("getMonsters")) {
+				updateMonster(connection, resp);
+			}
 			else {
 				resp.setStatus(404);
 			}
@@ -108,9 +111,6 @@ public class Main extends HttpServlet {
 			}
 			else if (req.getRequestURI().endsWith("/delete")) {
 				deleteMonster.delete_monster(connection, resp, jsonObject);
-			}
-			else if (req.getRequestURI().endsWith("/getMonsters")) {
-				updateMonster(connection, resp);
 			}
 			else {
 				resp.setStatus(404);
