@@ -8,7 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class updateMonster {
-    public static void updateMonster(Connection connection, HttpServletResponse resp, JSONObject info) throws JSONException, IOException {
+    public static void updateMonster(Connection connection, HttpServletResponse resp, JSONObject info)
+            throws JSONException, IOException {
         String id = info.getString("pad_ID");
         JSONObject monster = info.getJSONObject("monster");
         String name = monster.getString("name");
