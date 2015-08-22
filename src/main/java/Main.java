@@ -49,6 +49,7 @@ public class Main extends HttpServlet {
 				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
 			}
 			else if (split_req[1].equals("getMonsters")) {
+				resp.getWriter().print("Get Monsters");
 				updateMonster(connection, resp);
 			}
 			else {
