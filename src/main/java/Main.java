@@ -110,7 +110,7 @@ public class Main extends HttpServlet {
 				deleteMonster.delete_monster(connection, resp, jsonObject);
 			}
 			else if (req.getRequestURI().endsWith("/getMonsters")) {
-
+				updateMonster(connection, resp);
 			}
 			else {
 				resp.setStatus(404);
@@ -135,7 +135,7 @@ public class Main extends HttpServlet {
 		}
 	}
 
-	public static void updateMonster(Connection connection, HttpServletResponse resp, JSONObject info)
+	public static void updateMonster(Connection connection, HttpServletResponse resp)
 			throws JSONException, IOException {
 		List<MonsterAttributes> monsterList = MonsterServer.getInstance().getMonsters();
 		int i = 0;
