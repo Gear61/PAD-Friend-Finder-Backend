@@ -42,6 +42,8 @@ public class MonsterAttributes
         return awakenings;
     }
 
+    public int getMonsterId() { return monsterId; }
+
     public String getImageUrl()
     {
         return "http://puzzledragonx.com/en/img/book/" + String.valueOf(monsterId) + ".png";

@@ -1,6 +1,8 @@
+import Models.MonsterAttributes;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -15,6 +17,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 public class Main extends HttpServlet {
 	
@@ -106,6 +109,9 @@ public class Main extends HttpServlet {
 			else if (req.getRequestURI().endsWith("/delete")) {
 				deleteMonster.delete_monster(connection, resp, jsonObject);
 			}
+			else if (req.getRequestURI().endsWith("/getMonsters")) {
+
+			}
 			else {
 				resp.setStatus(404);
 			}
@@ -127,9 +133,25 @@ public class Main extends HttpServlet {
 				resp.getWriter().print("Failed to close connection: " + getStackTrace(e));
 			}
 		}
-	
 	}
-	
+
+	public static void updateMonster(Connection connection, HttpServletResponse resp, JSONObject info)
+			throws JSONException, IOException {
+		List<MonsterAttributes> monsterList = MonsterServer.getInstance().getMonsters();
+		int i = 0;
+		JSONArray monsterArray = new JSONArray();
+		for (i = 0; i < monsterList.size(); ++i) {
+			JSONObject monster = new JSONObject();
+			monster.put("name", monsterList.get(i).getName());
+			monster.put("level", monsterList.get(i).getLevel());
+			monster.put("skilllevel", monsterList.get(i).getSkillLevel());
+			monster.put("awakenings", monsterList.get(i).getAwakenings());
+			monster.put("monsterId", monsterList.get(i).getMonsterId());
+			monsterArray.put(monster);
+		}
+		resp.getWriter().print(monsterArray.toString());
+	}
+
 	private static Connection getConnection() throws URISyntaxException, SQLException
 	{
 	    URI dbUri = new URI(System.getenv("DATABASE_URL"));
