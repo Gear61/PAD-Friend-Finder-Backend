@@ -149,6 +149,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Harbinger Suzaku, Leilan", 99, 6, 7, 1263));
         monsters.add(new MonsterAttributes("Divine Flower Suzaku, Leilan", 99, 6, 4, 1262));
         monsters.add(new MonsterAttributes("Lightning Black Dragonbound, Typhon", 99, 6, 6, 1949));
+        monsters.add(new MonsterAttributes("marvelous red dragon caller, sonia", 99, 6, 6, 2317));
+        monsters.add(new MonsterAttributes("Guan Yinping", 50, 11, 0, 1589));
+        monsters.add(new MonsterAttributes("Twin Dragon, Wangren", 50, 11, 0, 1224));
     }
 
     public List<MonsterAttributes> getMonsters()
