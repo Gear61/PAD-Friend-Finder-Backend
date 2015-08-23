@@ -42,15 +42,17 @@ public class Main extends HttpServlet {
 		try {
 			String req_string = req.getRequestURI();
 			String[] split_req = req_string.split("/");
+
+			if (split_req[1].equals("getMonsters")) {
+				resp.getWriter().print("Get Monsters");
+				updateMonster(connection, resp);
+			}
+
 			if (split_req.length < 3) {
 				resp.setStatus(404);
 			}
 			else if (split_req[1].equals("monsters")) {
 				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
-			}
-			else if (split_req[1].equals("getMonsters")) {
-				resp.getWriter().print("Get Monsters");
-				updateMonster(connection, resp);
 			}
 			else {
 				resp.setStatus(404);
