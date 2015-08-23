@@ -146,6 +146,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Awoken Isis", 99, 5, 8, 2010));
         monsters.add(new MonsterAttributes("Awoken Anubis", 99, 5, 8, 2013));
         monsters.add(new MonsterAttributes("Enraged Black Phantom Demon, Zuoh", 99, 6, 5, 1953));
+        monsters.add(new MonsterAttributes("Divine Harbinger Suzaku, Leilan", 99, 6, 7, 1263));
+        monsters.add(new MonsterAttributes("Divine Flower Suzaku, Leilan", 99, 6, 4, 1262));
+        monsters.add(new MonsterAttributes("Lightning Black Dragonbound, Typhon", 99, 6, 6, 1949));
     }
 
     public List<MonsterAttributes> getMonsters()

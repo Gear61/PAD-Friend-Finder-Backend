@@ -44,11 +44,9 @@ public class Main extends HttpServlet {
 			String[] split_req = req_string.split("/");
 
 			if (split_req[1].equals("getMonsters")) {
-				resp.getWriter().print("Get Monsters");
-				updateMonster(connection, resp);
+				printMonsterList(resp);
 			}
-
-			if (split_req.length < 3) {
+			else if (split_req.length < 3) {
 				resp.setStatus(404);
 			}
 			else if (split_req[1].equals("monsters")) {
@@ -138,18 +136,17 @@ public class Main extends HttpServlet {
 		}
 	}
 
-	public static void updateMonster(Connection connection, HttpServletResponse resp)
+	public static void printMonsterList(HttpServletResponse resp)
 			throws JSONException, IOException {
 		List<MonsterAttributes> monsterList = MonsterServer.getInstance().getMonsters();
-		int i = 0;
 		JSONArray monsterArray = new JSONArray();
-		for (i = 0; i < monsterList.size(); ++i) {
+		for (MonsterAttributes currentMonster : monsterList) {
 			JSONObject monster = new JSONObject();
-			monster.put("name", monsterList.get(i).getName());
-			monster.put("level", monsterList.get(i).getLevel());
-			monster.put("skilllevel", monsterList.get(i).getSkillLevel());
-			monster.put("awakenings", monsterList.get(i).getAwakenings());
-			monster.put("monsterId", monsterList.get(i).getMonsterId());
+			monster.put("name", currentMonster.getName());
+			monster.put("level", currentMonster.getLevel());
+			monster.put("skill_level", currentMonster.getSkillLevel());
+			monster.put("awakenings", currentMonster.getAwakenings());
+			monster.put("monsterId", currentMonster.getMonsterId());
 			monsterArray.put(monster);
 		}
 		resp.getWriter().print(monsterArray.toString());
