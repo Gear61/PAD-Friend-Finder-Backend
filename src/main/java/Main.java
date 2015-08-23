@@ -44,7 +44,8 @@ public class Main extends HttpServlet {
 			String[] split_req = req_string.split("/");
 
 			if (split_req[1].equals("getMonsters")) {
-				printMonsterList(resp);
+				resp.setStatus(200);
+				printMonsterList.printMonsterList(resp);
 			}
 			else if (split_req.length < 3) {
 				resp.setStatus(404);
@@ -134,22 +135,6 @@ public class Main extends HttpServlet {
 				resp.getWriter().print("Failed to close connection: " + getStackTrace(e));
 			}
 		}
-	}
-
-	public static void printMonsterList(HttpServletResponse resp)
-			throws JSONException, IOException {
-		List<MonsterAttributes> monsterList = MonsterServer.getInstance().getMonsters();
-		JSONArray monsterArray = new JSONArray();
-		for (MonsterAttributes currentMonster : monsterList) {
-			JSONObject monster = new JSONObject();
-			monster.put("name", currentMonster.getName());
-			monster.put("level", currentMonster.getLevel());
-			monster.put("skill_level", currentMonster.getSkillLevel());
-			monster.put("awakenings", currentMonster.getAwakenings());
-			monster.put("monsterId", currentMonster.getMonsterId());
-			monsterArray.put(monster);
-		}
-		resp.getWriter().print(monsterArray.toString());
 	}
 
 	private static Connection getConnection() throws URISyntaxException, SQLException
