@@ -152,6 +152,12 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("marvelous red dragon caller, sonia", 99, 6, 6, 2317));
         monsters.add(new MonsterAttributes("Guan Yinping", 50, 11, 0, 1589));
         monsters.add(new MonsterAttributes("Twin Dragon, Wangren", 50, 11, 0, 1224));
+        monsters.add(new MonsterAttributes("Bleak Night Daughter, Pandora", 99, 6, 8, 2292));
+        monsters.add(new MonsterAttributes("Paradise Jade Dragon Caller, Sonia", 99, 6, 6, 2287));
+        monsters.add(new MonsterAttributes("Paradise Norn, Urd", 99, 6, 5, 2289));
+        monsters.add(new MonsterAttributes("Awoken Leilan", 99, 8, 5, 2073));
+        monsters.add(new MonsterAttributes("Awoken Haku", 99, 8, 5, 2076));
+        monsters.add(new MonsterAttributes("Green Gleaming Star Kirin, Sakuya", 99, 6, 9, 2077));
     }
 
     public List<MonsterAttributes> getMonsters()
