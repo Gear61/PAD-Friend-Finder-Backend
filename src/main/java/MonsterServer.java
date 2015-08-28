@@ -158,7 +158,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Awoken Leilan", 99, 8, 5, 2073));
         monsters.add(new MonsterAttributes("Awoken Haku", 99, 8, 5, 2076));
         monsters.add(new MonsterAttributes("Green Gleaming Star Kirin, Sakuya", 99, 6, 9, 2077));
-        monsters.add(new MonsterAttributes("Lightning Black Dragonbound, Typhon", 99, 6, 6, 1949));
     }
 
     public List<MonsterAttributes> getMonsters()
