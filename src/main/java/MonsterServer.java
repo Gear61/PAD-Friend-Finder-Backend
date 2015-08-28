@@ -33,10 +33,8 @@ public class MonsterServer
     {
         // FRIEND FINDER CREATURES
         monsters.add(new MonsterAttributes("Ancient Dragon Knight, Zeal", 9, 5, 3, 824));
-        monsters.add(new MonsterAttributes("World Tree Sprite, Alraune", 99, 11, 3, 1101));
         monsters.add(new MonsterAttributes("Dancing Light, Amaterasu Ohkami", 99, 11, 4, 988));
         monsters.add(new MonsterAttributes("Deathly Hell Deity Jackal, Anubis", 99, 11, 4, 1001));
-        monsters.add(new MonsterAttributes("Heavenly Herald, Archangel", 99, 6, 3, 1103));
         monsters.add(new MonsterAttributes("Guardian of the Sacred City, Athena", 99, 9, 6, 1422));
         monsters.add(new MonsterAttributes("Moonlit Feline Goddess, Bastet", 99, 8, 4, 1613));
         monsters.add(new MonsterAttributes("Feline Deity of Harmony, Bastet", 99, 8, 4, 888));
@@ -68,7 +66,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Flying General, Lu Bu", 99, 6, 4, 1240));
         monsters.add(new MonsterAttributes("Divine Law Goddess, Valkyrie Rose", 99, 7, 5, 1727));
         monsters.add(new MonsterAttributes("Celestial Life Dragon, Zhuge Liang", 99, 6, 6, 1375));
-        monsters.add(new MonsterAttributes("Sea God's Songstress, Siren", 99, 7, 3, 1100));
         monsters.add(new MonsterAttributes("Awoken Minerva", 99, 3, 8, 1533));
         monsters.add(new MonsterAttributes("Goddess of the Dead, Nephthys", 99, 6, 4, 1668));
         monsters.add(new MonsterAttributes("Awoken Neptune", 99, 3, 8, 1534));
