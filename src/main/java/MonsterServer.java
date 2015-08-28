@@ -157,6 +157,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Green Gleaming Star Kirin, Sakuya", 99, 6, 9, 2077));
         monsters.add(new MonsterAttributes("Blazing Goddess of Power, Kali", 99, 6, 9, 2078));
         monsters.add(new MonsterAttributes("War Deity of the Magic Spear, Odin", 99, 6, 9, 1925));
+        monsters.add(new MonsterAttributes("Scholarly God of Fortune, Ganesha", 99, 10, 7, 2082));
     }
 
     public List<MonsterAttributes> getMonsters()
