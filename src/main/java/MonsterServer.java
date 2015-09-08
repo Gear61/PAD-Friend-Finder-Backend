@@ -160,6 +160,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Scholarly God of Fortune, Ganesha", 99, 10, 7, 2082));
         monsters.add(new MonsterAttributes("Dawn Sky Sun Dragon Caller, Kanna", 99, 6, 6, 2148));
         monsters.add(new MonsterAttributes("Destruction God, Shiva Dragon", 99, 6, 8, 2253));
+        monsters.add(new MonsterAttributes("Snow-White Beauty, Valkyrie Claire", 99, 7, 6, 2290));
+        monsters.add(new MonsterAttributes("Bronzed Beauty, Valkyrie Claire", 99, 7, 6, 2318));
+        monsters.add(new MonsterAttributes("Batman+Disruptor", 99, 6, 6, 2133));
+        monsters.add(new MonsterAttributes("Batman+Batmobile", 99, 4, 6, 2134));
     }
 
     public List<MonsterAttributes> getMonsters()
