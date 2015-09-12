@@ -164,6 +164,8 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Bronzed Beauty, Valkyrie Claire", 99, 7, 6, 2318));
         monsters.add(new MonsterAttributes("Batman+Disruptor", 99, 6, 6, 2133));
         monsters.add(new MonsterAttributes("Batman+Batmobile", 99, 4, 6, 2134));
+        monsters.add(new MonsterAttributes("Divine Creator of Order, Vishnu", 99, 10, 7, 2081));
+        monsters.add(new MonsterAttributes("Awoken Karin", 99, 8, 5, 2074));
     }
 
     public List<MonsterAttributes> getMonsters()
