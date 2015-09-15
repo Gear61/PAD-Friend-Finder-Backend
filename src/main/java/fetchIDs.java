@@ -15,7 +15,7 @@ public class fetchIDs {
         try {
             String fetch_sql = "Select * from monster " +
                     "where pad_ID <> ? and name = ? and level >= ? and skill_level >= ? and awakenings >= ? and plus_eggs >= ? " +
-                    " Order by RANDOM() Limit 10 ";
+                    " Order by RANDOM()";
             PreparedStatement stmt = connection.prepareStatement(fetch_sql);
             JSONObject monster = info.getJSONObject("monster");
             stmt.setString(1, info.getString("pad_ID"));
