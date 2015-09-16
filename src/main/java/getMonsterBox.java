@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class getMonsterBox {
     public static void getMonsterBox(Connection connection, HttpServletResponse resp, String id) throws JSONException, IOException {
         try {
-            String get_Box_SQL = "Select * from monster where pad_ID = ? ";
+            String get_Box_SQL = "Select * from monster where pad_ID = ?";
             PreparedStatement stmt = connection.prepareStatement(get_Box_SQL);
             stmt.setString(1, id);
             ResultSet rs =  stmt.executeQuery();
