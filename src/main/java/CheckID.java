@@ -21,7 +21,6 @@ public class CheckID {
             if (!rs.next())
                 resp.setStatus(400);
             else {
-                resp.getWriter().print("Changing ID\n");
                 String id_change_sql = "UPDATE monster SET pad_ID = ? where pad_ID = ?";
                 stmt = connection.prepareStatement(id_change_sql);
                 stmt.setString(1, new_id);
