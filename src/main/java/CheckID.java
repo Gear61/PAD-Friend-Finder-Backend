@@ -27,7 +27,7 @@ public class CheckID {
                 stmt1.setString(1, new_id);
                 stmt1.setString(2, old_id);
                 resp.getWriter().print(id_change_sql);
-                stmt1.executeUpdate();
+                stmt1.executeQuery();
                 stmt1.close();
                 resp.setStatus(200);
             }
