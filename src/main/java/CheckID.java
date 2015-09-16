@@ -18,7 +18,7 @@ public class CheckID {
             PreparedStatement stmt = connection.prepareStatement(find_id_sql);
             stmt.setString(1, id);
             ResultSet rs = stmt.executeQuery();
-            if (rs == null)
+            if (!rs.next())
                 resp.setStatus(400);
             else
                 resp.setStatus(200);
