@@ -25,8 +25,8 @@ public class CheckID {
                 stmt = connection.prepareStatement(id_change_sql);
                 stmt.setString(1, new_id);
                 stmt.setString(2, old_id);
-                resp.getWriter().print(id_change_sql);
-                stmt.executeQuery();
+                resp.getWriter().print(id_change_sql + "\n");
+                stmt.executeUpdate();
                 stmt.close();
                 resp.setStatus(200);
             }
