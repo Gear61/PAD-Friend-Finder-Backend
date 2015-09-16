@@ -18,7 +18,7 @@ public class CheckID {
             PreparedStatement stmt = connection.prepareStatement(find_id_sql);
             stmt.setString(1, new_id);
             ResultSet rs = stmt.executeQuery();
-            if (!rs.next())
+            if (rs.next())
                 resp.setStatus(400);
             else {
                 String id_change_sql = "UPDATE monster set pad_ID = ? where pad_ID = ?";
