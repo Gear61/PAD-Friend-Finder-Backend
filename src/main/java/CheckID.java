@@ -22,6 +22,7 @@ public class CheckID {
                 resp.setStatus(400);
             else
                 resp.setStatus(200);
+            stmt.close();
         }
         catch (SQLException e1) {
             resp.setStatus(500);
