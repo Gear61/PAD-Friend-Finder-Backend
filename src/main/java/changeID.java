@@ -11,8 +11,8 @@ import java.sql.SQLException;
 /**
  * Created by jman0_000 on 9/15/2015.
  */
-public class CheckID {
-    public static void checkID(Connection connection, HttpServletResponse resp, String old_id, String new_id) throws JSONException, IOException {
+public class changeID {
+    public static void changeID(Connection connection, HttpServletResponse resp, String old_id, String new_id) throws JSONException, IOException {
         try{
             String find_id_sql = "Select pad_ID FROM monster WHERE pad_ID = ? limit 1";
             PreparedStatement stmt = connection.prepareStatement(find_id_sql);

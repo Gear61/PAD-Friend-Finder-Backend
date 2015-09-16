@@ -1,8 +1,6 @@
-import Models.MonsterAttributes;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -17,7 +15,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.List;
 
 public class Main extends HttpServlet {
 	
@@ -48,7 +45,7 @@ public class Main extends HttpServlet {
 				printMonsterList.printMonsterList(resp);
 			}
 			else if (split_req[1].equals("changeID")) {
-				CheckID.checkID(connection, resp, split_req[2], split_req[3]);
+				changeID.changeID(connection, resp, split_req[2], split_req[3]);
 			} else if (split_req.length < 3) {
 				resp.setStatus(404);
 			} else if (split_req[1].equals("monsters")) {
