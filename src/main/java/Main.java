@@ -47,13 +47,13 @@ public class Main extends HttpServlet {
 				resp.setStatus(200);
 				printMonsterList.printMonsterList(resp);
 			}
-			else if (split_req.length < 3) {
+			else if (split_req[1].equals("checkID")) {
+				CheckID.checkID(connection, resp, split_req[2]);
+			} else if (split_req.length < 3) {
 				resp.setStatus(404);
-			}
-			else if (split_req[1].equals("monsters")) {
+			} else if (split_req[1].equals("monsters")) {
 				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
-			}
-			else {
+			} else {
 				resp.setStatus(404);
 			}
 		}
