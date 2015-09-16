@@ -23,7 +23,7 @@ public class CheckID {
             else
                 resp.setStatus(200);
         }
-        catch  (SQLException e1) {
+        catch (SQLException e1) {
             resp.setStatus(500);
             resp.getWriter().print("checkID SQL error: " + Main.getStackTrace(e1));
         }
