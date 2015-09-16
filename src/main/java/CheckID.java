@@ -21,13 +21,13 @@ public class CheckID {
             if (!rs.next())
                 resp.setStatus(400);
             else {
-                String id_change_sql = "UPDATE monster SET pad_ID = ? where pad_ID = ?";
-                stmt = connection.prepareStatement(id_change_sql);
-                stmt.setString(1, new_id);
-                stmt.setString(2, old_id);
+                String id_change_sql = "UPDATE monster set pad_ID = ? where pad_ID = ?";
+                PreparedStatement stmt1 = connection.prepareStatement(id_change_sql);
+                stmt1.setString(1, new_id);
+                stmt1.setString(2, old_id);
                 resp.getWriter().print(id_change_sql + "\n");
-                stmt.executeUpdate();
-                stmt.close();
+                stmt1.executeUpdate();
+                stmt1.close();
                 resp.setStatus(200);
             }
             stmt.close();
