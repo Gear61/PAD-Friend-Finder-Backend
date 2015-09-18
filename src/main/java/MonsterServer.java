@@ -89,7 +89,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Dark Kouryu Emperor, Fagan", 99, 6, 8, 1343));
         monsters.add(new MonsterAttributes("Seraph of Dawn Lucifer", 99, 16, 4, 629));
         monsters.add(new MonsterAttributes("Dark Liege, Vampire Duke", 99, 7, 3, 894));
-        monsters.add(new MonsterAttributes("Jester Dragon, Drawn Joker", 99, 7, 3, 761));
         monsters.add(new MonsterAttributes("Asuka&Eva Unit-02", 50, 11, 0, 695));
         monsters.add(new MonsterAttributes("Awoken Dancing Queen Hera-Ur", 99, 5, 6, 1536));
         monsters.add(new MonsterAttributes("Awoken Hinokagutsuchi", 99, 5, 8, 1726));
@@ -108,9 +107,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Goddess of Rice Fields, Kushinada", 99, 4, 4, 804));
         monsters.add(new MonsterAttributes("Voice of God, Metatron", 99, 6, 5, 641));
         monsters.add(new MonsterAttributes("Extant Red Dragon Caller, Sonia", 99, 6, 5, 912));
-        monsters.add(new MonsterAttributes("Kirin of the Aurora, Sakuya", 99, 6, 4, 752));
-        monsters.add(new MonsterAttributes("Noble Wolf King Hero, Cu Chulainn", 99, 7, 3, 693));
-        monsters.add(new MonsterAttributes("Earth-Rending Emperor, Siegfried", 99, 7, 3, 692));
         monsters.add(new MonsterAttributes("Abyssal Hell Deity Jackal, Anubis", 99, 11, 4, 1000));
         monsters.add(new MonsterAttributes("Sparkling Goddess of Secrets, Kali", 99, 6, 6, 1747));
         monsters.add(new MonsterAttributes("Awoken Horus", 99, 5, 8, 2009));
