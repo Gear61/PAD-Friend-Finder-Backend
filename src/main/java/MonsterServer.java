@@ -49,7 +49,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Flowers, Da Qiao & Xiao Qiao", 99, 6, 4, 1238));
         monsters.add(new MonsterAttributes("Demon Slaying Goddess, Durga", 99, 6, 4, 1339));
         monsters.add(new MonsterAttributes("Hell-Creating Archdemon, Lucifer", 99, 16, 4, 1553));
-        monsters.add(new MonsterAttributes("Goemon, the Thief", 99, 15, 3, 566));
         monsters.add(new MonsterAttributes("Shining Lance Wielder, Odin", 99, 6, 8, 1423));
         monsters.add(new MonsterAttributes("Eternal Jade Dragon Caller, Sonia", 99, 6, 6, 914));
         monsters.add(new MonsterAttributes("Genius Sleeping Dragon, Zhuge Liang", 99, 5, 5, 1373));
@@ -87,7 +86,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Dark Sun Deity, Ra", 99, 8, 4, 998));
         monsters.add(new MonsterAttributes("Gleaming Kouryu Emperor, Fagan", 99, 6, 8, 1342));
         monsters.add(new MonsterAttributes("Dark Kouryu Emperor, Fagan", 99, 6, 8, 1343));
-        monsters.add(new MonsterAttributes("Seraph of Dawn Lucifer", 99, 16, 4, 629));
         monsters.add(new MonsterAttributes("Dark Liege, Vampire Duke", 99, 7, 3, 894));
         monsters.add(new MonsterAttributes("Asuka&Eva Unit-02", 50, 11, 0, 695));
         monsters.add(new MonsterAttributes("Awoken Dancing Queen Hera-Ur", 99, 5, 6, 1536));
@@ -99,7 +97,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Norn of the Present, Verdandi", 99, 6, 5, 1672));
         monsters.add(new MonsterAttributes("Norn of the Future, Skuld", 99, 6, 6, 1674));
         monsters.add(new MonsterAttributes("Gods of Hunt, Umisachi&Yamasachi", 99, 4, 4, 802));
-        monsters.add(new MonsterAttributes("Awoken Odin", 99, 6, 5, 363));
         monsters.add(new MonsterAttributes("Nocturne Chanter, Tsukuyomi", 99, 6, 4, 990));
         monsters.add(new MonsterAttributes("Hand of the Dark God, Metatron", 99, 6, 6, 643));
         monsters.add(new MonsterAttributes("Warrior Rose, Graceful Valkyrie", 99, 7, 3, 694));
@@ -163,7 +160,8 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Creator of Order, Vishnu", 99, 10, 7, 2081));
         monsters.add(new MonsterAttributes("Awoken Karin", 99, 8, 5, 2074));
         monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 9, 6, 2179));
-
+        monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 5, 7, 1242));
+        monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 6, 7, 1244));
     }
 
     public List<MonsterAttributes> getMonsters()
