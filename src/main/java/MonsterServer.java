@@ -81,12 +81,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Rebel Seraph Lucifer", 99, 16, 4, 1216));
         monsters.add(new MonsterAttributes("Sylph", 35, 6, 0, 356));
         monsters.add(new MonsterAttributes("Divine Wardens, Umisachi&Yamasachi", 99, 4, 7, 1297));
-        monsters.add(new MonsterAttributes("Awoken Zeus Olympios", 99, 16, 3, 917));
         monsters.add(new MonsterAttributes("BAO Robin+E. Stick", 99, 4, 3, 674));
         monsters.add(new MonsterAttributes("Dark Sun Deity, Ra", 99, 8, 4, 998));
         monsters.add(new MonsterAttributes("Gleaming Kouryu Emperor, Fagan", 99, 6, 8, 1342));
         monsters.add(new MonsterAttributes("Dark Kouryu Emperor, Fagan", 99, 6, 8, 1343));
-        monsters.add(new MonsterAttributes("Dark Liege, Vampire Duke", 99, 7, 3, 894));
         monsters.add(new MonsterAttributes("Asuka&Eva Unit-02", 50, 11, 0, 695));
         monsters.add(new MonsterAttributes("Awoken Dancing Queen Hera-Ur", 99, 5, 6, 1536));
         monsters.add(new MonsterAttributes("Awoken Hinokagutsuchi", 99, 5, 8, 1726));
