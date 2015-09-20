@@ -158,10 +158,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Batman+Disruptor", 99, 6, 6, 2133));
         monsters.add(new MonsterAttributes("Batman+Batmobile", 99, 4, 6, 2134));
         monsters.add(new MonsterAttributes("Divine Creator of Order, Vishnu", 99, 10, 7, 2081));
-        monsters.add(new MonsterAttributes("Awoken Karin", 99, 8, 5, 2074));
-        monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 9, 6, 2179));
-        monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 5, 7, 1242));
-        monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 6, 7, 1244));
+        monsters.add(new MonsterAttributes("Awoken Karin", 99, 5, 8, 2074));
+        monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 6, 9, 2179));
+        monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 7, 5, 1242));
+        monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 7, 6, 1244));
     }
 
     public List<MonsterAttributes> getMonsters()
