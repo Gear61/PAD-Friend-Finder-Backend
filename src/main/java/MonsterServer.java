@@ -160,6 +160,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 6, 9, 2179));
         monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 7, 5, 1242));
         monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 7, 6, 1244));
+        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog", 99, 11, 8, 1847));
     }
 
     public List<MonsterAttributes> getMonsters()
