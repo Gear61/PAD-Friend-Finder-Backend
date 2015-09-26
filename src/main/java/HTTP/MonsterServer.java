@@ -166,7 +166,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Batman+Batmobile", 99, 4, 6, 2134));
         monsters.add(new MonsterAttributes("Divine Creator of Order, Vishnu", 99, 10, 7, 2081));
         monsters.add(new MonsterAttributes("Awoken Karin", 99, 8, 5, 2074));
-        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog?", 99, 8, 11, 1847));
+        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog Infinity", 99, 8, 11, 1847));
     }
 
     public List<MonsterAttributes> getMonsters()
