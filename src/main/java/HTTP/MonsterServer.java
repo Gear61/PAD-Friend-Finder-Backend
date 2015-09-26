@@ -29,10 +29,11 @@ public class MonsterServer
         return instance;
     }
 
+    //name, max lv, skill level, awakenings
     private static void setUpServer()
     {
         // FRIEND FINDER CREATURES
-        monsters.add(new MonsterAttributes("Ancient Dragon Knight, Zeal", 9, 5, 3, 824));
+        monsters.add(new MonsterAttributes("Ancient Dragon Knight, Zeal", 99, 5, 3, 824));
         monsters.add(new MonsterAttributes("Dancing Light, Amaterasu Ohkami", 99, 11, 4, 988));
         monsters.add(new MonsterAttributes("Deathly Hell Deity Jackal, Anubis", 99, 11, 4, 1001));
         monsters.add(new MonsterAttributes("Guardian of the Sacred City, Athena", 99, 9, 6, 1422));
