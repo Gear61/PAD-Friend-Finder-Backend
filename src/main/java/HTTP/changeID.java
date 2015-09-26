@@ -1,5 +1,6 @@
+package HTTP;
+
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

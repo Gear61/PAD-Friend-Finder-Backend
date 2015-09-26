@@ -1,3 +1,5 @@
+package HTTP;
+
 import Models.MonsterAttributes;
 import org.json.JSONArray;
 import org.json.JSONException;

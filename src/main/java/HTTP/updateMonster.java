@@ -1,3 +1,5 @@
+package HTTP;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -45,7 +47,7 @@ public class updateMonster {
             }
             catch (SQLException e1) {
                 resp.setStatus(500);
-                resp.getWriter().print("updateMonster error: " + Main.getStackTrace(e1));
+                resp.getWriter().print("HTTP.updateMonster error: " + Main.getStackTrace(e1));
             }
         }
     }

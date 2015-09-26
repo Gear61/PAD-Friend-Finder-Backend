@@ -1,3 +1,5 @@
+package HTTP;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -22,7 +24,7 @@ public class deleteMonster {
         }
         catch (SQLException e1) {
             resp.setStatus(500);
-            resp.getWriter().print("deleteMonster exception: There was an error: " + Main.getStackTrace(e1));
+            resp.getWriter().print("HTTP.deleteMonster exception: There was an error: " + Main.getStackTrace(e1));
         }
     }
 }

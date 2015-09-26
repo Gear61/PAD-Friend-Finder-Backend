@@ -1,3 +1,5 @@
+package HTTP;
+
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
@@ -44,7 +46,7 @@ public class Main extends HttpServlet {
 				resp.setStatus(200);
 				printMonsterList.printMonsterList(resp);
 			}
-			else if (split_req[1].equals("changeID")) {
+			else if (split_req[1].equals("HTTP.changeID")) {
 				changeID.changeID(connection, resp, split_req[2], split_req[3]);
 			} else if (split_req.length < 3) {
 				resp.setStatus(404);

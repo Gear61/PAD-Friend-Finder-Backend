@@ -1,3 +1,5 @@
+package HTTP;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,7 +33,7 @@ public class getMonsterBox {
         }
         catch (SQLException e) {
             resp.setStatus(500);
-            resp.getWriter().print("getMonsterBox error: " + Main.getStackTrace(e));
+            resp.getWriter().print("HTTP.getMonsterBox error: " + Main.getStackTrace(e));
         }
     }
 }
