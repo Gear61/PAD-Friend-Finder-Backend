@@ -1,4 +1,4 @@
-package HTTP; /**
+/**
  * Created by alexanderchiou on 7/13/15.
  */
 
@@ -49,7 +49,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Flowers, Da Qiao & Xiao Qiao", 99, 6, 4, 1238));
         monsters.add(new MonsterAttributes("Demon Slaying Goddess, Durga", 99, 6, 4, 1339));
         monsters.add(new MonsterAttributes("Hell-Creating Archdemon, Lucifer", 99, 16, 4, 1553));
-        monsters.add(new MonsterAttributes("Goemon, the Thief", 99, 15, 3, 566));
         monsters.add(new MonsterAttributes("Shining Lance Wielder, Odin", 99, 6, 8, 1423));
         monsters.add(new MonsterAttributes("Eternal Jade Dragon Caller, Sonia", 99, 6, 6, 914));
         monsters.add(new MonsterAttributes("Genius Sleeping Dragon, Zhuge Liang", 99, 5, 5, 1373));
@@ -82,14 +81,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Rebel Seraph Lucifer", 99, 16, 4, 1216));
         monsters.add(new MonsterAttributes("Sylph", 35, 6, 0, 356));
         monsters.add(new MonsterAttributes("Divine Wardens, Umisachi&Yamasachi", 99, 4, 7, 1297));
-        monsters.add(new MonsterAttributes("Awoken Zeus Olympios", 99, 16, 3, 917));
         monsters.add(new MonsterAttributes("BAO Robin+E. Stick", 99, 4, 3, 674));
         monsters.add(new MonsterAttributes("Dark Sun Deity, Ra", 99, 8, 4, 998));
         monsters.add(new MonsterAttributes("Gleaming Kouryu Emperor, Fagan", 99, 6, 8, 1342));
         monsters.add(new MonsterAttributes("Dark Kouryu Emperor, Fagan", 99, 6, 8, 1343));
-        monsters.add(new MonsterAttributes("Seraph of Dawn Lucifer", 99, 16, 4, 629));
-        monsters.add(new MonsterAttributes("Dark Liege, Vampire Duke", 99, 7, 3, 894));
-        monsters.add(new MonsterAttributes("Jester Dragon, Drawn Joker", 99, 7, 3, 761));
         monsters.add(new MonsterAttributes("Asuka&Eva Unit-02", 50, 11, 0, 695));
         monsters.add(new MonsterAttributes("Awoken Dancing Queen Hera-Ur", 99, 5, 6, 1536));
         monsters.add(new MonsterAttributes("Awoken Hinokagutsuchi", 99, 5, 8, 1726));
@@ -100,7 +95,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Norn of the Present, Verdandi", 99, 6, 5, 1672));
         monsters.add(new MonsterAttributes("Norn of the Future, Skuld", 99, 6, 6, 1674));
         monsters.add(new MonsterAttributes("Gods of Hunt, Umisachi&Yamasachi", 99, 4, 4, 802));
-        monsters.add(new MonsterAttributes("Awoken Odin", 99, 6, 5, 363));
         monsters.add(new MonsterAttributes("Nocturne Chanter, Tsukuyomi", 99, 6, 4, 990));
         monsters.add(new MonsterAttributes("Hand of the Dark God, Metatron", 99, 6, 6, 643));
         monsters.add(new MonsterAttributes("Warrior Rose, Graceful Valkyrie", 99, 7, 3, 694));
@@ -108,9 +102,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Goddess of Rice Fields, Kushinada", 99, 4, 4, 804));
         monsters.add(new MonsterAttributes("Voice of God, Metatron", 99, 6, 5, 641));
         monsters.add(new MonsterAttributes("Extant Red Dragon Caller, Sonia", 99, 6, 5, 912));
-        monsters.add(new MonsterAttributes("Kirin of the Aurora, Sakuya", 99, 6, 4, 752));
-        monsters.add(new MonsterAttributes("Noble Wolf King Hero, Cu Chulainn", 99, 7, 3, 693));
-        monsters.add(new MonsterAttributes("Earth-Rending Emperor, Siegfried", 99, 7, 3, 692));
         monsters.add(new MonsterAttributes("Abyssal Hell Deity Jackal, Anubis", 99, 11, 4, 1000));
         monsters.add(new MonsterAttributes("Sparkling Goddess of Secrets, Kali", 99, 6, 6, 1747));
         monsters.add(new MonsterAttributes("Awoken Horus", 99, 5, 8, 2009));
@@ -159,14 +150,17 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("War Deity of the Magic Spear, Odin", 99, 6, 9, 1925));
         monsters.add(new MonsterAttributes("Scholarly God of Fortune, Ganesha", 99, 10, 7, 2082));
         monsters.add(new MonsterAttributes("Dawn Sky Sun Dragon Caller, Kanna", 99, 6, 6, 2148));
-        monsters.add(new MonsterAttributes("Destruction God, Shiva Dragon", 99, 6, 8, 2253));
+        monsters.add(new MonsterAttributes("Destroyer God, Shiva Dragon", 99, 6, 8, 2253));
         monsters.add(new MonsterAttributes("Snow-White Beauty, Valkyrie Claire", 99, 7, 6, 2290));
         monsters.add(new MonsterAttributes("Bronzed Beauty, Valkyrie Claire", 99, 7, 6, 2318));
         monsters.add(new MonsterAttributes("Batman+Disruptor", 99, 6, 6, 2133));
         monsters.add(new MonsterAttributes("Batman+Batmobile", 99, 4, 6, 2134));
         monsters.add(new MonsterAttributes("Divine Creator of Order, Vishnu", 99, 10, 7, 2081));
-        monsters.add(new MonsterAttributes("Awoken Karin", 99, 8, 5, 2074));
-        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog?", 99, 8, 11, 1847));
+        monsters.add(new MonsterAttributes("Awoken Karin", 99, 5, 8, 2074));
+        monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 6, 9, 2179));
+        monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 7, 5, 1242));
+        monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 7, 6, 1244));
+        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog", 99, 11, 8, 1847));
     }
 
     public List<MonsterAttributes> getMonsters()

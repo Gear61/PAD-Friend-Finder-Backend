@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 web: java -cp target\classes;"target\dependency\*" HTTP.Main
+=======
+web: java -cp target\classes;"target\dependency\*" Main
+>>>>>>> 7210fcb52d3026c05a77997825b375b7d08c615a
