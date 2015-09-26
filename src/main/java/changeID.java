@@ -11,14 +11,14 @@ import java.sql.SQLException;
 /**
  * Created by jman0_000 on 9/15/2015.
  */
-public class CheckID {
-    public static void checkID(Connection connection, HttpServletResponse resp, String old_id, String new_id) throws JSONException, IOException {
+public class changeID {
+    public static void changeID(Connection connection, HttpServletResponse resp, String old_id, String new_id) throws JSONException, IOException {
         try{
             String find_id_sql = "Select pad_ID FROM monster WHERE pad_ID = ? limit 1";
             PreparedStatement stmt = connection.prepareStatement(find_id_sql);
             stmt.setString(1, new_id);
             ResultSet rs = stmt.executeQuery();
-            if (!rs.next())
+            if (rs.next())
                 resp.setStatus(400);
             else {
                 String id_change_sql = "UPDATE monster set pad_ID = ? where pad_ID = ?";
@@ -26,7 +26,6 @@ public class CheckID {
                 stmt.setString(1, new_id);
                 stmt.setString(2, old_id);
                 stmt.executeUpdate();
-                resp.getWriter().print(id_change_sql + " with old: " + old_id + " new: " + new_id + " \n");
                 resp.setStatus(200);
             }
             stmt.close();
