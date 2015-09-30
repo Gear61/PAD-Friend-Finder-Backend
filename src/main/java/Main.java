@@ -46,7 +46,11 @@ public class Main extends HttpServlet {
 			}
 			else if (split_req[1].equals("changeID")) {
 				changeID.changeID(connection, resp, split_req[2], split_req[3]);
-			} else if (split_req.length < 3) {
+			}
+			else if (split_req[1].equals("topLeaders")) {
+				topLeaders.topLeaders(connection, resp);
+			}
+			else if (split_req.length < 3) {
 				resp.setStatus(404);
 			} else if (split_req[1].equals("monsters")) {
 				getMonsterBox.getMonsterBox(connection, resp, split_req[2]);
