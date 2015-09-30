@@ -15,7 +15,7 @@ import java.sql.SQLException;
 public class topLeaders {
     public static void topLeaders(Connection connection, HttpServletResponse resp) throws JSONException, IOException {
         try {
-            String top_Monsters_SQL = "Select name, COUNT(*) from monster as from monster " +
+            String top_Monsters_SQL = "Select name, COUNT(*) as count from monster " +
                     "GROUP BY name ORDER BY COUNT DESC limit 10";
             PreparedStatement stmt = connection.prepareStatement(top_Monsters_SQL);
             ResultSet rs =  stmt.executeQuery();
