@@ -50,7 +50,7 @@ public class Main extends HttpServlet {
 				changeID.changeID(connection, resp, split_req[2], split_req[3]);
 			}
 			else if (split_req[1].equals("getTopLeaders")) {
-				topMonsters.topMonsters(connection, resp);
+				topLeaders.topLeaders(connection, resp);
 			}
 			else if (split_req.length < 3) {
 				resp.setStatus(404);

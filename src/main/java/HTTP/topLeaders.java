@@ -14,8 +14,8 @@ import java.sql.SQLException;
 /**
  * Created by jman0_000 on 9/30/2015.
  */
-public class topMonsters {
-    public static void topMonsters(Connection connection, HttpServletResponse resp) throws JSONException, IOException {
+public class topLeaders {
+    public static void topLeaders(Connection connection, HttpServletResponse resp) throws JSONException, IOException {
         try {
             String top_Monsters_SQL = "Select name, COUNT(*) from monster as from monster " +
                                  "GROUP BY name ORDER BY COUNT DESC limit 10";
@@ -33,7 +33,7 @@ public class topMonsters {
         }
         catch (SQLException e) {
             resp.setStatus(500);
-            resp.getWriter().print("HTTP.topMonsters error: " + Main.getStackTrace(e));
+            resp.getWriter().print("HTTP.topLeaders error: " + Main.getStackTrace(e));
         }
     }
 }
