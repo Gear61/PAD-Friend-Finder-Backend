@@ -41,7 +41,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("BAO Batman+Batarang", 50, 4, 0, 677));
         monsters.add(new MonsterAttributes("BAO Batman+BW Stealth", 99, 4, 7, 1476));
         monsters.add(new MonsterAttributes("Crazed King of Purgatory, Beelzebub", 99, 5, 8, 1371));
-        monsters.add(new MonsterAttributes("Endless Blue Dragon Caller, Sonia", 99, 6, 6, 1089));
+        monsters.add(new MonsterAttributes("Endless Blue Dragon Caller, Sonia", 99, 8, 6, 1089));
         monsters.add(new MonsterAttributes("Keeper of Paradise, Metatron", 99, 6, 6, 1518));
         monsters.add(new MonsterAttributes("Awoken Ceres", 99, 3, 8, 1535));
         monsters.add(new MonsterAttributes("Destroying Goddess of Power, Kali", 99, 6, 6, 1588));
@@ -50,7 +50,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Demon Slaying Goddess, Durga", 99, 6, 4, 1339));
         monsters.add(new MonsterAttributes("Hell-Creating Archdemon, Lucifer", 99, 16, 4, 1553));
         monsters.add(new MonsterAttributes("Shining Lance Wielder, Odin", 99, 6, 8, 1423));
-        monsters.add(new MonsterAttributes("Eternal Jade Dragon Caller, Sonia", 99, 6, 6, 914));
+        monsters.add(new MonsterAttributes("Eternal Jade Dragon Caller, Sonia", 99, 8, 6, 914));
         monsters.add(new MonsterAttributes("Genius Sleeping Dragon, Zhuge Liang", 99, 5, 5, 1373));
         monsters.add(new MonsterAttributes("Banishing Claw Byakko, Haku", 99, 6, 7, 1269));
         monsters.add(new MonsterAttributes("Sacred Life Goddess, Hathor", 99, 6, 4, 1666));
@@ -74,7 +74,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Pure Light Sun Deity, Ra", 99, 8, 4, 999));
         monsters.add(new MonsterAttributes("BAO Robin", 99, 4, 0, 673));
         monsters.add(new MonsterAttributes("Awoken Phantom God, Odin", 99, 6, 6, 1108));
-        monsters.add(new MonsterAttributes("Marvelous Red Dragon Caller, Sonia", 99, 6, 6, 1645));
+        monsters.add(new MonsterAttributes("Marvelous Red Dragon Caller, Sonia", 99, 8, 6, 1645));
         monsters.add(new MonsterAttributes("Holy Night Kirin Princess, Sakuya", 99, 6, 7, 1783));
         monsters.add(new MonsterAttributes("King of Hell, Satan", 99, 16, 3, 1646));
         monsters.add(new MonsterAttributes("Demolishing Creator, Shiva", 99, 6, 4, 1113));
@@ -101,7 +101,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Scholarly God, Ganesha", 99, 6, 4, 1337));
         monsters.add(new MonsterAttributes("Goddess of Rice Fields, Kushinada", 99, 4, 4, 804));
         monsters.add(new MonsterAttributes("Voice of God, Metatron", 99, 6, 5, 641));
-        monsters.add(new MonsterAttributes("Extant Red Dragon Caller, Sonia", 99, 6, 5, 912));
+        monsters.add(new MonsterAttributes("Extant Red Dragon Caller, Sonia", 99, 8, 5, 912));
         monsters.add(new MonsterAttributes("Abyssal Hell Deity Jackal, Anubis", 99, 11, 4, 1000));
         monsters.add(new MonsterAttributes("Sparkling Goddess of Secrets, Kali", 99, 6, 6, 1747));
         monsters.add(new MonsterAttributes("Awoken Horus", 99, 5, 8, 2009));
@@ -137,7 +137,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Harbinger Suzaku, Leilan", 99, 6, 7, 1263));
         monsters.add(new MonsterAttributes("Divine Flower Suzaku, Leilan", 99, 6, 4, 1262));
         monsters.add(new MonsterAttributes("Lightning Black Dragonbound, Typhon", 99, 6, 6, 1949));
-        monsters.add(new MonsterAttributes("marvelous red dragon caller, sonia", 99, 6, 6, 2317));
+        monsters.add(new MonsterAttributes("marvelous red dragon caller, sonia", 99, 8, 6, 2317));
         monsters.add(new MonsterAttributes("Guan Yinping", 50, 11, 0, 1589));
         monsters.add(new MonsterAttributes("Twin Dragon, Wangren", 50, 11, 0, 1224));
         monsters.add(new MonsterAttributes("Bleak Night Daughter, Pandora", 99, 6, 8, 2292));
@@ -160,8 +160,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("God of the Destroying Lance, Odin", 99, 6, 9, 2179));
         monsters.add(new MonsterAttributes("Steadfast Bearded Deity, Guan Yu", 99, 7, 5, 1242));
         monsters.add(new MonsterAttributes("Valiant & Loyal Deity, Guan Yu", 99, 7, 6, 1244));
-        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog", 99, 11, 8, 1847));
+        monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog Infinity", 99, 11, 8, 1847));
         monsters.add(new MonsterAttributes("Placating Founder, Okuninushi", 99, 4, 7, 2282));
+        monsters.add(new MonsterAttributes("Sea Deity, Neptune Dragon", 99, 6, 8, 2255));
     }
 
     public List<MonsterAttributes> getMonsters()
