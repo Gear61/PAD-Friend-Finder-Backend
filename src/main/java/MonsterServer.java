@@ -163,6 +163,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Maleficent Phantom Dragon King, Zaerog Infinity", 99, 11, 8, 1847));
         monsters.add(new MonsterAttributes("Placating Founder, Okuninushi", 99, 4, 7, 2282));
         monsters.add(new MonsterAttributes("Sea Deity, Neptune Dragon", 99, 6, 8, 2255));
+        monsters.add(new MonsterAttributes("Awoken Viper Orochi", 99, 5, 8, 2322));
+        monsters.add(new MonsterAttributes("Awoken Susano no Mikoto", 99, 5, 8, 2323));
+
     }
 
     public List<MonsterAttributes> getMonsters()
