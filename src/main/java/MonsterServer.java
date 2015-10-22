@@ -165,7 +165,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Sea Deity, Neptune Dragon", 99, 6, 8, 2255));
         monsters.add(new MonsterAttributes("Awoken Viper Orochi", 99, 5, 8, 2322));
         monsters.add(new MonsterAttributes("Awoken Susano no Mikoto", 99, 5, 8, 2323));
-
+        monsters.add(new MonsterAttributes("Mistress of the Old Castle, Kali", 99, 6, 6, 2407));
+        monsters.add(new MonsterAttributes("Old Castle Blue Dragon Caller, Sonia", 99, 6, 6, 2406));
+        monsters.add(new MonsterAttributes("Awoken Amaterasu Ohkami", 99, 5, 8, 2324));
+        monsters.add(new MonsterAttributes("Awoken Tsukuyomi", 99, 5, 8, 2325));
     }
 
     public List<MonsterAttributes> getMonsters()
