@@ -169,6 +169,12 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Old Castle Blue Dragon Caller, Sonia", 99, 6, 6, 2406));
         monsters.add(new MonsterAttributes("Awoken Amaterasu Ohkami", 99, 5, 8, 2324));
         monsters.add(new MonsterAttributes("Awoken Tsukuyomi", 99, 5, 8, 2325));
+        monsters.add(new MonsterAttributes("Light Lance God, Odin Dragon", 99, 6, 9, 2257));
+        monsters.add(new MonsterAttributes("Sun God, Ra Dragon", 99, 6, 8, 2259));
+        monsters.add(new MonsterAttributes("Divine Galaxy Goddess, Nut", 99, 6, 8, 2285));
+        monsters.add(new MonsterAttributes("Soul-Judging God of Dark Riches, Osiris", 99, 6, 7, 2286));
+        monsters.add(new MonsterAttributes("Cloud & Hardy-Daytona", 99, 6, 4, 2030));
+        monsters.add(new MonsterAttributes("Determined Summoner, Yuna", 99, 6, 4, 2044));
     }
 
     public List<MonsterAttributes> getMonsters()
