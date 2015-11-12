@@ -175,6 +175,10 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Soul-Judging God of Dark Riches, Osiris", 99, 6, 7, 2386));
         monsters.add(new MonsterAttributes("Cloud & Hardy-Daytona", 99, 6, 4, 2030));
         monsters.add(new MonsterAttributes("Determined Summoner, Yuna", 99, 6, 4, 2044));
+        monsters.add(new MonsterAttributes("Awoken Sakuya", 99, 5, 9, 2389));
+        monsters.add(new MonsterAttributes("Thought Spinner Norn, Verdandi", 99, 6, 8, 2390));
+        monsters.add(new MonsterAttributes("Miko Goddess of Protection, Kushinadahime", 99, 4, 9, 2280));
+        monsters.add(new MonsterAttributes("Vigorous Hunt Gods, Umisachi & Yamasachi", 99, 5, 9, 2279));
     }
 
     public List<MonsterAttributes> getMonsters()
