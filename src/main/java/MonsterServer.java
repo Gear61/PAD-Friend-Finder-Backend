@@ -179,6 +179,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Thought Spinner Norn, Verdandi", 99, 6, 8, 2390));
         monsters.add(new MonsterAttributes("Miko Goddess of Protection, Kushinadahime", 99, 4, 9, 2280));
         monsters.add(new MonsterAttributes("Vigorous Hunt Gods, Umisachi & Yamasachi", 99, 5, 9, 2279));
+        monsters.add(new MonsterAttributes("The Greatest Enemy, Raoh", 99, 6, 6, 2445));
+        monsters.add(new MonsterAttributes("Hokuto Shinken's Successor, Kenshiro", 99, 6, 6, 2444));
+        monsters.add(new MonsterAttributes("Ruling Firestorm God, Set", 99, 6, 7, 2384));
     }
 
     public List<MonsterAttributes> getMonsters()
