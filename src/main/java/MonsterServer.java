@@ -182,6 +182,11 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("The Greatest Enemy, Raoh", 99, 6, 6, 2445));
         monsters.add(new MonsterAttributes("Hokuto Shinken's Successor, Kenshiro", 99, 6, 6, 2444));
         monsters.add(new MonsterAttributes("Ruling Firestorm God, Set", 99, 6, 7, 2384));
+        monsters.add(new MonsterAttributes("God of the Night, Tsukuyomi Dragon", 99, 6, 9, 2261));
+        monsters.add(new MonsterAttributes("Awoken Idunn&Idunna", 99, 5, 8, 2393));
+        monsters.add(new MonsterAttributes("Awoken Thor", 99, 5, 8, 2395));
+        monsters.add(new MonsterAttributes("Judging-Claw Orange Dragonbound, Saria", 99, 6, 5, 2441));
+        monsters.add(new MonsterAttributes("Returning-Claw Blue Dragonbound, Ryune", 99, 6, 6, 2443));
     }
 
     public List<MonsterAttributes> getMonsters()
