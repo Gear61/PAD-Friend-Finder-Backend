@@ -187,6 +187,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Awoken Thor", 99, 5, 8, 2395));
         monsters.add(new MonsterAttributes("Judging-Claw Orange Dragonbound, Saria", 99, 6, 5, 2441));
         monsters.add(new MonsterAttributes("Returning-Claw Blue Dragonbound, Ryune", 99, 6, 6, 2443));
+        monsters.add(new MonsterAttributes("Awoken Astaroth", 99, 5, 8, 2505));
         monsters.add(new MonsterAttributes("Awoken Archdemon Lucifer", 99, 5, 8, 2507));
         monsters.add(new MonsterAttributes("Crimson Sun Longevity Dragon Caller, Kanna", 99, 6, 7, 2534));
         monsters.add(new MonsterAttributes("Long-Standing Desire God-Emperor, Yamato Takeru", 99, 6, 7, 2536));
