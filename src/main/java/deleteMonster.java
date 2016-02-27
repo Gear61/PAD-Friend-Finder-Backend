@@ -22,7 +22,9 @@ public class deleteMonster {
         }
         catch (SQLException e1) {
             resp.setStatus(500);
-            resp.getWriter().print("deleteMonster exception: There was an error: " + Main.getStackTrace(e1));
+        }
+        finally {
+            resp.getWriter().print("{}");
         }
     }
 }

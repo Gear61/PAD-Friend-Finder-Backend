@@ -45,8 +45,10 @@ public class updateMonster {
             }
             catch (SQLException e1) {
                 resp.setStatus(500);
-                resp.getWriter().print("updateMonster error: " + Main.getStackTrace(e1));
             }
+        }
+        finally {
+            resp.getWriter().print("{}");
         }
     }
 }
