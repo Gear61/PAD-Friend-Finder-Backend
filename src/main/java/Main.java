@@ -121,11 +121,11 @@ public class Main extends HttpServlet {
 		}
 		catch (JSONException e1) {
 			resp.setStatus(400);
-			resp.getWriter().print("Error parsing request JSON: " + getStackTrace(e1));
+			resp.getWriter().print("{}");
 		}
 		catch (IOException e) {
 			resp.setStatus(500);
-			resp.getWriter().print("Error creating SQL statement: " + getStackTrace(e));
+			resp.getWriter().print("{}");
 		}
 		
 		finally {

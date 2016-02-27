@@ -31,7 +31,7 @@ public class topLeaders {
         }
         catch (SQLException e) {
             resp.setStatus(500);
-            resp.getWriter().print("HTTP.topLeaders error: " + Main.getStackTrace(e));
+            resp.getWriter().print("{}");
         }
     }
 }
