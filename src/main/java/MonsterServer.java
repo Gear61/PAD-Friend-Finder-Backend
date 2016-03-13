@@ -194,6 +194,8 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Year's First Dream God of Luck, Horus", 99, 6, 7, 2537));
         monsters.add(new MonsterAttributes("Ancestral Blue Dragon Caller, Sonia", 99, 8, 9, 2566));
         monsters.add(new MonsterAttributes("Past Life Jade Dragon Caller, Sonia", 99, 8, 9, 2567));
+        monsters.add(new MonsterAttributes("Adored Starsea Goddess, Andromeda", 99, 6, 9, 2658));
+        monsters.add(new MonsterAttributes("Awoken Pandora", 99, 5, 8, 2662));
     }
 
     public List<MonsterAttributes> getMonsters()
