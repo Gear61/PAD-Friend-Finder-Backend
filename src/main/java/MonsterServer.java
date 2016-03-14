@@ -83,13 +83,11 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Wardens, Umisachi&Yamasachi", 99, 4, 7, 1297));
         monsters.add(new MonsterAttributes("BAO Robin+E. Stick", 99, 4, 3, 674));
         monsters.add(new MonsterAttributes("Dark Sun Deity, Ra", 99, 8, 4, 998));
-        monsters.add(new MonsterAttributes("Gleaming Kouryu Emperor, Fagan", 99, 6, 8, 1342));
         monsters.add(new MonsterAttributes("Dark Kouryu Emperor, Fagan", 99, 6, 8, 1343));
         monsters.add(new MonsterAttributes("Asuka&Eva Unit-02", 50, 11, 0, 695));
         monsters.add(new MonsterAttributes("Awoken Dancing Queen Hera-Ur", 99, 5, 6, 1536));
         monsters.add(new MonsterAttributes("Awoken Hinokagutsuchi", 99, 5, 8, 1726));
         monsters.add(new MonsterAttributes("Crimson Lotus Mistress, Echidna", 99, 6, 3, 1099));
-        monsters.add(new MonsterAttributes("Unyielding Samurai Dragon King, Zaerog", 99, 5, 4, 1712));
         monsters.add(new MonsterAttributes("TAMADRApurin", 99, 5, 4, 1163));
         monsters.add(new MonsterAttributes("Norn of the Past, Urd", 99, 6, 5, 1670));
         monsters.add(new MonsterAttributes("Norn of the Present, Verdandi", 99, 6, 5, 1672));
@@ -139,7 +137,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Lightning Black Dragonbound, Typhon", 99, 6, 6, 1949));
         monsters.add(new MonsterAttributes("marvelous red dragon caller, sonia", 99, 8, 6, 2317));
         monsters.add(new MonsterAttributes("Guan Yinping", 50, 11, 0, 1589));
-        monsters.add(new MonsterAttributes("Twin Dragon, Wangren", 50, 11, 0, 1224));
         monsters.add(new MonsterAttributes("Bleak Night Daughter, Pandora", 99, 6, 8, 2292));
         monsters.add(new MonsterAttributes("Paradise Jade Dragon Caller, Sonia", 99, 6, 6, 2287));
         monsters.add(new MonsterAttributes("Paradise Norn, Urd", 99, 6, 5, 2289));
@@ -196,6 +193,9 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Past Life Jade Dragon Caller, Sonia", 99, 8, 9, 2567));
         monsters.add(new MonsterAttributes("Adored Starsea Goddess, Andromeda", 99, 6, 9, 2658));
         monsters.add(new MonsterAttributes("Awoken Pandora", 99, 5, 8, 2662));
+        monsters.add(new MonsterAttributes("Seraph of Corruption, Lucifer", 99, 16, 9, 2502));
+        monsters.add(new MonsterAttributes("Sacred Life Goddess of the Colored Sky, Hathor", 99, 6, 8, 2387));
+        monsters.add(new MonsterAttributes("Anti-God Machine, Ragnarok Dragon", 99, 6, 8, 2594));
     }
 
     public List<MonsterAttributes> getMonsters()
