@@ -61,7 +61,7 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Divine Brave General, Krishna", 99, 6, 4, 1331));
         monsters.add(new MonsterAttributes("Devoted Miko Goddess, Kushinadahime", 99, 4, 7, 1298));
         monsters.add(new MonsterAttributes("Shining Goddess of Secrets, Kali", 99, 6, 5, 1586));
-        monsters.add(new MonsterAttributes("Keeper of the Sacred Texts, Metatron", 99, 6, 6, 1217));
+        monsters.add(new MonsterAttributes("Keeper of the Sacred Texts, Metatron", 99, 7, 6, 1217));
         monsters.add(new MonsterAttributes("Divine Flying General, Lu Bu", 99, 6, 4, 1240));
         monsters.add(new MonsterAttributes("Divine Law Goddess, Valkyrie Rose", 99, 7, 5, 1727));
         monsters.add(new MonsterAttributes("Celestial Life Dragon, Zhuge Liang", 99, 6, 6, 1375));
@@ -196,6 +196,12 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Seraph of Corruption, Lucifer", 99, 16, 9, 2502));
         monsters.add(new MonsterAttributes("Sacred Life Goddess of the Colored Sky, Hathor", 99, 6, 8, 2387));
         monsters.add(new MonsterAttributes("Anti-God Machine, Ragnarok Dragon", 99, 6, 8, 2594));
+        monsters.add(new MonsterAttributes("Cutting-Claw Green Dragonbound, Sylvie", 99, 6, 6, 2509));
+        monsters.add(new MonsterAttributes("Gods' Enemy Monstrous Wolf, Fenrir", 99, 6, 5, 2641));
+        monsters.add(new MonsterAttributes("Tome-Creating White Phantom Demon, Ilm", 99, 8, 6, 1951));
+        monsters.add(new MonsterAttributes("Last Nanto General, Yuria", 99, 6, 5, 2447));
+        monsters.add(new MonsterAttributes("Reminiscent Norn, Urd", 99, 6, 9, 2663));
+        monsters.add(new MonsterAttributes("Awoken Freyr", 99, 5, 8, 2392));
     }
 
     public List<MonsterAttributes> getMonsters()
