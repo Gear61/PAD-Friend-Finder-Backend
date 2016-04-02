@@ -91,6 +91,8 @@ public class Main extends HttpServlet {
 			resp.setStatus(500);
 			resp.getWriter().print("Table creation error: " + e.getMessage());
 		}
+
+		resp.addHeader("Access-Control-Allow-Origin", "http://pad-friend-finder.herokuapp.com");
 		
 		StringBuilder jb = new StringBuilder();
 		String line;
@@ -103,8 +105,6 @@ public class Main extends HttpServlet {
 			resp.setStatus(400);
 			resp.getWriter().print("Couldn't read in request body: " + getStackTrace(e));
 		}
-
-		System.err.println(jb.toString());
 
 		try {
 			JSONObject jsonObject = new JSONObject(jb.toString());
