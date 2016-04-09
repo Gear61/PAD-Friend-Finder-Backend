@@ -202,6 +202,8 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Last Nanto General, Yuria", 99, 6, 5, 2447));
         monsters.add(new MonsterAttributes("Reminiscent Norn, Urd", 99, 6, 9, 2663));
         monsters.add(new MonsterAttributes("Awoken Freyr", 99, 5, 8, 2392));
+        monsters.add(new MonsterAttributes("Misato&AAA Wunder, Main Battery Gunfire", 99, 8, 7, 2328));
+        monsters.add(new MonsterAttributes("Shinji&Kaworu&Unit-13, FI", 99, 11, 6, 1201));
     }
 
     public List<MonsterAttributes> getMonsters()
