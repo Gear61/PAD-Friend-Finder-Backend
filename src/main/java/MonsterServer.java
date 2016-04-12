@@ -204,6 +204,8 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Awoken Freyr", 99, 5, 8, 2392));
         monsters.add(new MonsterAttributes("Misato&AAA Wunder, Main Battery Gunfire", 99, 8, 7, 2328));
         monsters.add(new MonsterAttributes("Shinji&Kaworu&Unit-13, FI", 99, 11, 6, 1201));
+        monsters.add(new MonsterAttributes("Squad 13 Lieutenant, Rukia Kuchiki", 99, 6, 4, 2679));
+        monsters.add(new MonsterAttributes("Hollow, Ichigo Kurosaki", 99, 6, 5, 2677));
     }
 
     public List<MonsterAttributes> getMonsters()
