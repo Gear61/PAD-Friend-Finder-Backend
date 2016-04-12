@@ -92,7 +92,7 @@ public class Main extends HttpServlet {
 			resp.getWriter().print("Table creation error: " + e.getMessage());
 		}
 
-		resp.addHeader("Access-Control-Allow-Origin", "http://pad-friend-finder.herokuapp.com");
+		resp.addHeader("Access-Control-Allow-Origin", "http://localhost:5000");
 		
 		StringBuilder jb = new StringBuilder();
 		String line;
@@ -123,7 +123,7 @@ public class Main extends HttpServlet {
 		}
 		catch (JSONException e1) {
 			resp.setStatus(400);
-			resp.getWriter().print("{}");
+			resp.getWriter().print("Invalid JSON: " + jb.toString());
 		}
 		catch (IOException e) {
 			resp.setStatus(500);
