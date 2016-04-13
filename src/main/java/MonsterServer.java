@@ -10,28 +10,28 @@ import java.util.List;
 /**
  * Created by Alex on 11/1/2014.
  */
-public class MonsterServer
-{
+public class MonsterServer {
     private static MonsterServer instance = null;
     private static List<MonsterAttributes> monsters = new ArrayList<>();
 
-    private MonsterServer()
-    {
+    private MonsterServer() {
         setUpServer();
     }
 
-    public static MonsterServer getInstance()
-    {
-        if (instance == null)
-        {
+    public static MonsterServer getInstance() {
+        if (instance == null) {
             instance = new MonsterServer();
         }
         return instance;
     }
 
-    private static void setUpServer()
-    {
+    private static void setUpServer() {
         // FRIEND FINDER CREATURES
+        monsters.add(new MonsterAttributes("God of the Night, Tsukuyomi Dragon", 99, 6, 9, 2261));
+        monsters.add(new MonsterAttributes("Sun God, Ra Dragon", 99, 6, 8, 2259));
+        monsters.add(new MonsterAttributes("Awoken Sakuya", 99, 5, 9, 2389));
+        monsters.add(new MonsterAttributes("Awoken Bastet", 99, 5, 8, 2011));
+        monsters.add(new MonsterAttributes("Thought Spinner Norn, Verdandi", 99, 6, 8, 2390));
         monsters.add(new MonsterAttributes("Ancient Dragon Knight, Zeal", 9, 5, 3, 824));
         monsters.add(new MonsterAttributes("Dancing Light, Amaterasu Ohkami", 99, 11, 4, 988));
         monsters.add(new MonsterAttributes("Deathly Hell Deity Jackal, Anubis", 99, 11, 4, 1001));
@@ -104,7 +104,6 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Sparkling Goddess of Secrets, Kali", 99, 6, 6, 1747));
         monsters.add(new MonsterAttributes("Awoken Horus", 99, 5, 8, 2009));
         monsters.add(new MonsterAttributes("Awoken Ra", 99, 5, 8, 2012));
-        monsters.add(new MonsterAttributes("Awoken Bastet", 99, 5, 8, 2011));
         monsters.add(new MonsterAttributes("Awoken Shiva", 99, 5, 8, 1954));
         monsters.add(new MonsterAttributes("Magic Hand Slayer Goddess, Durga", 99, 6, 4, 2083));
         monsters.add(new MonsterAttributes("Avowed Thief, Ishikawa Goemon", 99, 6, 4, 2006));
@@ -167,19 +166,15 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Awoken Amaterasu Ohkami", 99, 5, 8, 2324));
         monsters.add(new MonsterAttributes("Awoken Tsukuyomi", 99, 5, 8, 2325));
         monsters.add(new MonsterAttributes("Light Lance God, Odin Dragon", 99, 6, 9, 2257));
-        monsters.add(new MonsterAttributes("Sun God, Ra Dragon", 99, 6, 8, 2259));
         monsters.add(new MonsterAttributes("Divine Galaxy Goddess, Nut", 99, 6, 8, 2385));
         monsters.add(new MonsterAttributes("Soul-Judging God of Dark Riches, Osiris", 99, 6, 7, 2386));
         monsters.add(new MonsterAttributes("Cloud & Hardy-Daytona", 99, 6, 4, 2030));
         monsters.add(new MonsterAttributes("Determined Summoner, Yuna", 99, 6, 4, 2044));
-        monsters.add(new MonsterAttributes("Awoken Sakuya", 99, 5, 9, 2389));
-        monsters.add(new MonsterAttributes("Thought Spinner Norn, Verdandi", 99, 6, 8, 2390));
         monsters.add(new MonsterAttributes("Miko Goddess of Protection, Kushinadahime", 99, 4, 9, 2280));
         monsters.add(new MonsterAttributes("Vigorous Hunt Gods, Umisachi & Yamasachi", 99, 5, 9, 2279));
         monsters.add(new MonsterAttributes("The Greatest Enemy, Raoh", 99, 6, 6, 2445));
         monsters.add(new MonsterAttributes("Hokuto Shinken's Successor, Kenshiro", 99, 6, 6, 2444));
         monsters.add(new MonsterAttributes("Ruling Firestorm God, Set", 99, 6, 7, 2384));
-        monsters.add(new MonsterAttributes("God of the Night, Tsukuyomi Dragon", 99, 6, 9, 2261));
         monsters.add(new MonsterAttributes("Awoken Idunn&Idunna", 99, 5, 8, 2393));
         monsters.add(new MonsterAttributes("Awoken Thor", 99, 5, 8, 2395));
         monsters.add(new MonsterAttributes("Judging-Claw Orange Dragonbound, Saria", 99, 6, 5, 2441));
@@ -206,12 +201,17 @@ public class MonsterServer
         monsters.add(new MonsterAttributes("Shinji&Kaworu&Unit-13, FI", 99, 11, 6, 1201));
         monsters.add(new MonsterAttributes("Squad 13 Lieutenant, Rukia Kuchiki", 99, 6, 4, 2679));
         monsters.add(new MonsterAttributes("Hollow, Ichigo Kurosaki", 99, 6, 5, 2677));
+        monsters.add(new MonsterAttributes("Chaotic Black Dragonbound, Typhon", 99, 7, 9, 2745));
+        monsters.add(new MonsterAttributes("Enthusiast Red Dragonbound, Gadius", 99, 7, 8, 2744));
+        monsters.add(new MonsterAttributes("Awoken Artemis", 99, 5, 8, 2749));
+        monsters.add(new MonsterAttributes("One Eyed Black Beast Demon, Zuoh", 99, 6, 8, 2746));
+        monsters.add(new MonsterAttributes("Cruel Bleak Night Goddess, Pandora", 99, 6, 9, 2661));
+        monsters.add(new MonsterAttributes("Prophetic Norn, Skuld", 99, 6, 9, 2714));
+        monsters.add(new MonsterAttributes("Fervent Monkey King, Sun Wukong", 99, 6, 9, 2660));
+        monsters.add(new MonsterAttributes("Heroic God-Emperor, Yamato Takeru", 99, 6, 9, 2657));
     }
 
-    public List<MonsterAttributes> getMonsters()
-    {
+    public List<MonsterAttributes> getMonsters() {
         return monsters;
     }
 }
-
-
