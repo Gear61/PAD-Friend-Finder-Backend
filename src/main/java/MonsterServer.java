@@ -209,6 +209,10 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Prophetic Norn, Skuld", 99, 6, 9, 2714));
         monsters.add(new MonsterAttributes("Fervent Monkey King, Sun Wukong", 99, 6, 9, 2660));
         monsters.add(new MonsterAttributes("Heroic God-Emperor, Yamato Takeru", 99, 6, 9, 2657));
+        monsters.add(new MonsterAttributes("Armored Batman", 99, 6, 4, 2827));
+        monsters.add(new MonsterAttributes("Guardian of Metropolis, Superman", 99, 5, 7, 2824));
+        monsters.add(new MonsterAttributes("Awoken Machine Hera", 99, 16, 9, 2526));
+        monsters.add(new MonsterAttributes("Awoken Machine Zeus", 99, 21, 9, 2528));
     }
 
     public List<MonsterAttributes> getMonsters() {
