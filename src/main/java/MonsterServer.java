@@ -213,6 +213,9 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Guardian of Metropolis, Superman", 99, 5, 7, 2824));
         monsters.add(new MonsterAttributes("Awoken Machine Hera", 99, 16, 9, 2526));
         monsters.add(new MonsterAttributes("Awoken Machine Zeus", 99, 21, 9, 2528));
+        monsters.add(new MonsterAttributes("Cloud & Fenrir", 99, 6, 5, 2764));
+        monsters.add(new MonsterAttributes("Unwavering Summoner, Yuna", 99, 6, 5, 2766));
+        monsters.add(new MonsterAttributes("One-Winged Angel, Sephiroth", 99, 6, 5, 2765));
     }
 
     public List<MonsterAttributes> getMonsters() {
