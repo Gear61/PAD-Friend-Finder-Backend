@@ -216,6 +216,8 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Cloud & Fenrir", 99, 6, 5, 2764));
         monsters.add(new MonsterAttributes("Unwavering Summoner, Yuna", 99, 6, 5, 2766));
         monsters.add(new MonsterAttributes("One-Winged Angel, Sephiroth", 99, 6, 5, 2765));
+        monsters.add(new MonsterAttributes("Savior, Lightning", 99, 6, 5, 2780));
+        monsters.add(new MonsterAttributes("Destroying Bow Steel Star God, Australis", 99, 6, 5, 2563));
     }
 
     public List<MonsterAttributes> getMonsters() {
