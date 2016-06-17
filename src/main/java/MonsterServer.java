@@ -221,6 +221,7 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Crimson Orchid Virtue, Xiang Mei", 99, 6, 6, 2756));
         monsters.add(new MonsterAttributes("Awoken Freyja", 99, 5, 8, 2394));
         monsters.add(new MonsterAttributes("Awoken Hermes", 99, 5, 8, 2748));
+        monsters.add(new MonsterAttributes("Blue Wind Ninja Princess, Hatsume", 99, 5, 6, 1192));
     }
 
     public List<MonsterAttributes> getMonsters() {
