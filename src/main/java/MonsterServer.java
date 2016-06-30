@@ -225,6 +225,7 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Library Room's Manager God, Kali", 99, 6, 9, 2814));
         monsters.add(new MonsterAttributes("Sincere Class Monitor, Athena", 99, 11, 9, 2810));
         monsters.add(new MonsterAttributes("Sacred Discipline Committee Chair, Athena", 99, 11, 9, 2811));
+        monsters.add(new MonsterAttributes("Demon Destroying Star Angel, Ruel", 99, 6, 7, 2495));
     }
 
     public List<MonsterAttributes> getMonsters() {
