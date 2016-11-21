@@ -227,6 +227,29 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Sacred Discipline Committee Chair, Athena", 99, 11, 9, 2811));
         monsters.add(new MonsterAttributes("Demon Destroying Star Angel, Ruel", 99, 6, 7, 2495));
         monsters.add(new MonsterAttributes("Blue Bamboo Virtue, You Yu", 99, 6, 8, 2758));
+        monsters.add(new MonsterAttributes("Awoken Kushinadahime", 99, 5, 8, 2983));
+        monsters.add(new MonsterAttributes("Scholarly God of Wealth Building, Ganesha", 99, 12, 9, 3071));
+        monsters.add(new MonsterAttributes("Divine General of the Radiant Heaven, Krishna", 99, 10, 9, 3068));
+        monsters.add(new MonsterAttributes("Awoken Izanagi", 99, 5, 8, 2984));
+        monsters.add(new MonsterAttributes("Hell Eye's Evil Duchess, Gremory", 99, 6, 6, 2999));
+        monsters.add(new MonsterAttributes("Destroying Wing Dragon Emperor, Sherias Roots", 99, 6, 6, 2943));
+        monsters.add(new MonsterAttributes("Awoken Cao Cao", 99, 5, 8, 2901));
+        monsters.add(new MonsterAttributes("Broad-Minded Hell Demon, Scarlet", 99, 11, 8, 2206));
+        monsters.add(new MonsterAttributes("Awoken Da Qiao & Xiao Qiao", 99, 5, 8, 2904));
+        monsters.add(new MonsterAttributes("Sniper at Rest, Myr", 99, 6, 9, 3112));
+        monsters.add(new MonsterAttributes("Star Cutting Time Dragonbound, Myr", 99, 16, 9, 2969));
+        monsters.add(new MonsterAttributes("Moonlit Feline Goddess Armor, Ace", 99, 5, 7, 2929));
+        monsters.add(new MonsterAttributes("Green Earth Wind Dragon Caller, Kaede", 99, 6, 9, 2972));
+        monsters.add(new MonsterAttributes("Indigo Ocean Water Dragon Caller, Sumire", 99, 6, 9, 2971));
+        monsters.add(new MonsterAttributes("Evil Star Flying General, Lu Bu", 99, 6, 9, 2905));
+        monsters.add(new MonsterAttributes("Scarlet Sky Flame Dragon Caller, Tsubaki", 99, 6, 9, 2970));
+        monsters.add(new MonsterAttributes("Bursting Great Earl of Hell, Ronove", 99, 6, 5, 2995));
+        monsters.add(new MonsterAttributes("Blazing Deity Falcon Armor, Ace", 99, 5, 7, 2927));
+        monsters.add(new MonsterAttributes("Heavenly Virtuous Goddess, Sarasvati", 99, 10, 7, 3069));
+        monsters.add(new MonsterAttributes("Chaotic Black Dragonbound Armor, Ana", 99, 5, 9, 3090));
+        monsters.add(new MonsterAttributes("Imposing Dandy, Maeda Keiji", 99, 6, 5, 3108));
+        monsters.add(new MonsterAttributes("Awoken Liu Bei", 99, 5, 8, 2903));
+        monsters.add(new MonsterAttributes("Brave Vanquishing Deity, Perseus", 99, 6, 9, 2659));
     }
 
     public List<MonsterAttributes> getMonsters() {
