@@ -250,6 +250,20 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Imposing Dandy, Maeda Keiji", 99, 6, 5, 3108));
         monsters.add(new MonsterAttributes("Awoken Liu Bei", 99, 5, 8, 2903));
         monsters.add(new MonsterAttributes("Brave Vanquishing Deity, Perseus", 99, 6, 9, 2659));
+        monsters.add(new MonsterAttributes("Guardian of the Imperial Capital, Athena", 99, 6, 8, 3193));
+        monsters.add(new MonsterAttributes("Sorceress of Sinister Flight, Goetia", 99, 6, 8, 3537));
+        monsters.add(new MonsterAttributes("Reincarnated Pandora", 99, 5, 9, 3506));
+        monsters.add(new MonsterAttributes("Reincarnated Kushinadahime", 99, 5, 9, 3503));
+        monsters.add(new MonsterAttributes("Reincarnated Astaroth", 99, 5, 9, 3507));
+        monsters.add(new MonsterAttributes("Reincarnated Tsukuyomi", 99, 5, 9, 3389));
+        monsters.add(new MonsterAttributes("Reincarnated Bastet", 99, 6, 9, 3384));
+        monsters.add(new MonsterAttributes("Reincarnated Anubis", 99, 6, 9, 3385));
+        monsters.add(new MonsterAttributes("Reincarnated Shiva", 99, 7, 9, 3241));
+        monsters.add(new MonsterAttributes("Reincarnated Ra", 99, 5, 9, 3273));
+        monsters.add(new MonsterAttributes("The Chosen King, Noctis", 99, 6, 9, 3305));
+        monsters.add(new MonsterAttributes("Almighty God, Ra Dragon", 99, 6, 9, 3265));
+        monsters.add(new MonsterAttributes("Dark God, Tsukuyomi Dragon", 99, 6, 9, 3266));
+        monsters.add(new MonsterAttributes("Tsuginomai Hakuren, Rukia Kuchiki", 99, 6, 7, 3355));
     }
 
     public List<MonsterAttributes> getMonsters() {
