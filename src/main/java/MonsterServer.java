@@ -264,6 +264,8 @@ public class MonsterServer {
         monsters.add(new MonsterAttributes("Almighty God, Ra Dragon", 99, 6, 9, 3265));
         monsters.add(new MonsterAttributes("Dark God, Tsukuyomi Dragon", 99, 6, 9, 3266));
         monsters.add(new MonsterAttributes("Tsuginomai Hakuren, Rukia Kuchiki", 99, 6, 7, 3355));
+        monsters.add(new MonsterAttributes("Nightshade Sun Dragon Caller, Kanna", 99, 6, 7, 3234));
+        monsters.add(new MonsterAttributes("Yellow-Horned Demon Princess, Raijin", 99, 6, 6, 3416));
     }
 
     public List<MonsterAttributes> getMonsters() {
